@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc0cb"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:gravity="center_horizontal"
+        android:text="SMS Sending App"
+        android:textAlignment="center"
+        android:textColor="#4DD637"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/AppOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppName"
+        android:layout_margin="15sp"
+        android:gravity="center_horizontal"
+        android:text="Performed by: Sandesh Dinkar (BE18F06F013)"
+        android:textAlignment="center"
+        android:textColor="#383CC1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/mobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppOwnerName"
+        android:layout_margin="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Mobile No."
+        android:textColor="#8b4513"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/getMobileNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AppOwnerName"
+        android:layout_margin="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/mobileNo"
+        android:inputType="number"
+        android:textColor="#8b4513" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getMobileNumber"
+        android:layout_margin="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Message Text"
+        android:textColor="#8b4513"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/getMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/message"
+        android:layout_margin="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:width="150px"
+        android:gravity="top"
+        android:textColor="#8b4513" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15sp"
+        android:layout_marginTop="50dp"
+        android:width="200px"
+        android:backgroundTint="#eee8aa"
+        android:text="Send"
+        android:textColor="#8b4513" />
+</RelativeLayout>
